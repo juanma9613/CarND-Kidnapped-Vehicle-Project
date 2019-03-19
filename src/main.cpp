@@ -108,6 +108,7 @@ int main() {
           }
 
           // Update the weights and resample
+                                            // 0.3m      the noise orservations in car system of reference
           pf.updateWeights(sensor_range, sigma_landmark, noisy_observations, map);
           pf.resample();
 
